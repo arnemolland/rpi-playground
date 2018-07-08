@@ -5,7 +5,7 @@ import time
 def countdown():
     i = 10
     while i >= 0:
-        lcd.message(i)
+        lcd.message(str(i))
         time.sleep(1.0)
         if i == 0:
             lcd.message('Takeoff!')
