@@ -13,7 +13,7 @@ def countdown():
 IO.setwarnings(False)
 IO.setmode(IO.BCM)
 IO.setup(2, IO.OUT) #GPIO 2 -> RED
-IO.setup(3, IO.OOUT) #GPIO 3 - GREEN
+IO.setup(3, IO.OUT) #GPIO 3 - GREEN
 IO.setup(14, IO.IN) #GPIO 14 - IR
 
 lcd_rs = 18
