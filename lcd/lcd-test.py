@@ -5,7 +5,7 @@ import time
 def countdown():
     time.sleep(5.0)
     for num in range(10, 1):
-    ex = str(num)
+        ex = str(num)
         lcd.message(ex)
         time.sleep(1.0)
     lcd.message('Takeoff!')
