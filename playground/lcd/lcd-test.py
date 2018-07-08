@@ -23,12 +23,11 @@ lcd  = LCD.Adafruit_CharLCD(lcd_rs, lcd_en, lcd_d4, lcd_d5, lcd_d6, lcd_d7, lcd_
 
 def loop:
     time.sleep(5.0)
-
     for num in range(10, 0, 1):
         lcd.message(num)
         time.sleep(1.0)
-
     lcd.message('Takeoff!')
+    return
 
 while true:
     if(IO.input(14) == True):
@@ -38,5 +37,5 @@ while true:
     if(IO.input(14) == False):
         IO.output(3, True)
         IO.output(2, False)
-        
+
     loop()
