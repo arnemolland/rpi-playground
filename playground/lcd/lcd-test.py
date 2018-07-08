@@ -14,9 +14,11 @@ lcd_rows = 2
 
 lcd  = LCD.Adafruit_CharLCD(lcd_rs, lcd_en, lcd_d4, lcd_d5, lcd_d6, lcd_d7, lcd_columns, lcd_rows, lcd_backlight)
 
-lcd.message('Hallo paa do')
-
 time.sleep(5.0)
 
-for x in range(2, 30):
-    lcd.message(x)
+i = 10
+while i > 0:
+    lcd.message(i)
+    n=i-1
+
+lcd.message('Takeoff!')
