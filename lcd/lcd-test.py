@@ -2,18 +2,16 @@ import Adafruit_CharLCD as LCD
 import RPi.GPIO as IO
 import time
 
-def number(num):
-    return str(num)
-
-
 def countdown():
     i = 10
-    while i > 0:
-        lcd.message(number(i))
-        i -= i
+    while i => 0:
+        lcd.message(i)
         time.sleep(1.0)
+        if i == 0:
+            lcd.message('Takeoff!')
 
-    lcd.message('Takeoff!')
+        i = i-1
+
     time.sleep(2.0)
     lcd.clear()
     return
