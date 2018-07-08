@@ -4,7 +4,7 @@ import time
 
 def countdown():
     i = 10
-    while i => 0:
+    while i >= 0:
         lcd.message(i)
         time.sleep(1.0)
         if i == 0:
