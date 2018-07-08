@@ -4,10 +4,13 @@ import time
 
 def countdown():
     time.sleep(5.0)
-    for num in range(10, 1):
-        ex = str(num)
-        lcd.message(ex)
+    
+    i = 10
+    while i > 0:
+        lcd.message(str(i))
+        i -= i
         time.sleep(1.0)
+        
     lcd.message('Takeoff!')
     time.sleep(2.0)
     lcd.clear()
