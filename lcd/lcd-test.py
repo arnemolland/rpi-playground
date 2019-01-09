@@ -23,12 +23,12 @@ IO.setup(2, IO.OUT) #GPIO 2 -> RED
 IO.setup(3, IO.OUT) #GPIO 3 - GREEN
 IO.setup(14, IO.IN) #GPIO 14 - IR
 
-lcd_rs = 18
+lcd_rs = 27
 lcd_en = 22
-lcd_d4 = 23
-lcd_d5 = 17
-lcd_d6 = 25
-lcd_d7 = 24
+lcd_d4 = 25
+lcd_d5 = 24
+lcd_d6 = 23
+lcd_d7 = 18
 
 lcd_backlight = 4
 lcd_columns = 16
